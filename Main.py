@@ -1,9 +1,15 @@
-import pygame 
+import pygame
+from game import Game
 
-pygame.init()
-window = pygame.display.set_mode((800,600))
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode((800, 600))
+    pygame.display.set_caption("Super-Python!")
+    
+    game = Game(screen)
+    game.run()
 
-run = True
+    pygame.quit()
 
-while run:
-    pass
+if __name__ == "__main__":
+    main()
