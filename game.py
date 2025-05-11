@@ -19,7 +19,7 @@ class Game:
         self.player.update()
 
     def draw(self):
-        self.screen.fill((30, 30, 30))  # tło
+        self.screen.fill((30, 30, 30))
         self.player.draw(self.screen)
         pygame.display.flip()
 
